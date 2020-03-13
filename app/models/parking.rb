@@ -56,6 +56,7 @@ class Parking < ApplicationRecord
     	self.amount = 200 + ((duration - 60).to_f / 30).ceil * 50
     else 
     	self.amount = 2000 + ((duration - 60).to_f / 30).ceil * 25
+    end 
   end
 
 end
